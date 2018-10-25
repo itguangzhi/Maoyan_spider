@@ -45,7 +45,11 @@ from Maoyan.maoyan_Util import Properties
 
 global config
 
-PropertiesFile = r'D:\python\github\SpiderInfo\Maoyan\conf\maoyanSpider.conf'
+try:
+    PropertiesFile = r'D:\python\github\SpiderInfo\Maoyan\conf\maoyanSpider.conf'
+except:
+    PropertiesFile = r'/nfs_db/Spider/maoyan/Maoyan/conf/maoyanSpider.conf'
+
 
 config = Properties(PropertiesFile).getProperties()
 

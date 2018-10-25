@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c1956aa8-b265-4826-9b58-089601185cf8" name="50maoyan" url="http://192.168.50.50">
+        <fileTransfer host="192.168.50.50" port="22" rootFolder="/nfs_db/Spider/maoyan" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="38e29105-2dc2-493e-b392-d7b9c33305d6" name="111maoyan" url="http://192.168.30.111">
+        <fileTransfer host="192.168.30.111" port="22" rootFolder="/nfs_db/Spider/maoyan" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
