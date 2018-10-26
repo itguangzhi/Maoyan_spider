@@ -45,13 +45,15 @@ from Maoyan.maoyan_Util import Properties
 
 global config
 
+
+linux_PropertiesFile = r'/nfs_db/Spider/maoyan/Maoyan/conf/maoyanSpider.conf'
+
+windows_PropertiesFile = r'D:\python\github\SpiderInfo\Maoyan\conf\maoyanSpider.conf'
+
 try:
-    PropertiesFile = r'D:\python\github\SpiderInfo\Maoyan\conf\maoyanSpider.conf'
+    config = Properties(linux_PropertiesFile).getProperties()
 except:
-    PropertiesFile = r'/nfs_db/Spider/maoyan/Maoyan/conf/maoyanSpider.conf'
-
-
-config = Properties(PropertiesFile).getProperties()
+    config = Properties(windows_PropertiesFile).getProperties()
 
 
 class DatabaseInfo:

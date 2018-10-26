@@ -64,5 +64,7 @@ if __name__ == '__main__':
             Run.city_run()
 
         else:print('ERROR ：%s参数错误'%str(_options))
-    except:
+    except IndexError as e:
         print('请输入参数')
+    except Exception as e:
+        print('输入错误 %s'%str(e))
